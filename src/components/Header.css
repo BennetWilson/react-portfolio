@@ -1,0 +1,10 @@
+.nav {
+    justify-content: end;
+}
+
+.mainHeader {
+    text-align: center;
+    color: blue;
+    margin-top: 2%;
+    font-size: 2rem;
+}
