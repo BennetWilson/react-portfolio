@@ -1,0 +1,26 @@
+.picSize {
+    height: 450px;
+    width: 300px;
+    justify-content: center !important;
+    border: 3px rgb(8, 214, 241) solid !important;
+    box-shadow: 5px 5px 5px rgb(52, 52, 243) ;
+}
+.divCenter {
+    text-align: center;
+    margin: 40px;
+}
+
+.lovelyBorder {
+    border:rgb(45, 241, 78) solid 2px;
+    justify-content: center;
+}
+
+.picSize:hover {
+    border: 3px rgb(226, 114, 226) solid !important;
+    box-shadow: 5px 5px 5px rgb(255, 0, 255) ;
+    transform: scale(1.1);
+}
+
+.textStyle {
+    font-weight: bold;
+}

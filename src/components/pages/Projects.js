@@ -1,5 +1,5 @@
 import React from "react";
-import { Apps } from "../../data";
+import Apps from "../../data";
 import { Card, Button, Col } from "react-bootstrap";
 import './Projects.css';
 
@@ -8,20 +8,21 @@ import './Projects.css';
 export default function Projects() {
   return (
     <div>
-      <h1>My Projects</h1>
+      <h1 className='title'>- My Projects -</h1>
       <section id="projects">
         <div>
           <div>
             {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
             {/* <h1>Apps I've Built</h1> */}
-            <p>
+            {/* <p className='title'>
               A short list of my favorite applications that I've built during
               the past few months.
-            </p>
+            </p> */}
           </div>
-
+    <main className="container ">
+      <div className ='row gridWidth'>
           {Apps.map((App) => (
-            <Card style={{ width: "50rem", }} className='cardSpace'>
+            <Card  className='col-sm-6 mt-3 cardSpace'>
               <Col>
                 {/* <Card.Img variant="side" src={App.image}/> */}
                 <Card.Img
@@ -34,15 +35,16 @@ export default function Projects() {
                   <Card.Title >{App.title}</Card.Title>
                   <Card.Text>{App.subtitle}</Card.Text>
                   <Card.Text>{App.description}</Card.Text>
-                  
-                  <a href="App.link" target="_blank"> <Button variant="primary">{App.title}</Button></a>
-                  
-                  <a href="App.link2" target="_blank"><Button variant="primary">GitHub Repository</Button></a>
-
+                  <div className='row justify-content-center'>
+                  <Card.Link href={App.link} target='_blank' className="btn btn-primary col m-3">Github</Card.Link>
+                  <Card.Link href={App.link2} target='_blank' className="btn btn-primary col m-3">Deployed</Card.Link>
+                  </div>
                 </Card.Body>
               </Col>
             </Card>
           ))}
+            </div>
+          </main>
         </div>
       </section>
     </div>

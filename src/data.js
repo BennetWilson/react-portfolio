@@ -1,4 +1,4 @@
-export const Apps = [
+const Apps = [
     {
       title: "Restaurant Review Application",
       subtitle: "Handlebars.js || CSS || Javascript || Node.js || Express || Sequelize",
@@ -36,3 +36,5 @@ export const Apps = [
       link2:"https://github.com/BennetWilson/note-taker"
     },
   ];
+
+  export default Apps
