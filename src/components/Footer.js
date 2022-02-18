@@ -5,7 +5,7 @@ import { Nav } from "react-bootstrap"
 
 function Footer() {
     return (
-        <div className = "border">
+        <div className ="border">
     <>
   <Nav className="justify-content-center" activeKey="/home">
     <Nav.Item>
@@ -23,8 +23,8 @@ function Footer() {
       </Nav.Link>
     </Nav.Item>
   </Nav>
-  <p className="text-center mt-4 mb-4">Or right-aligned</p>
-  <Nav className="justify-content-end" activeKey="/home">
+  {/* <p className="text-center mt-4 mb-4">Or right-aligned</p> */}
+  {/* <Nav className="justify-content-end" activeKey="/home">
     <Nav.Item>
       <Nav.Link href="/home">Active</Nav.Link>
     </Nav.Item>
@@ -39,7 +39,7 @@ function Footer() {
         Disabled
       </Nav.Link>
     </Nav.Item>
-  </Nav>
+  </Nav> */}
 </>
     </div>
   );
