@@ -18,7 +18,7 @@ function Footer() {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="disabled" disabled>
-            Disabled
+            PlaceHolder
           </Nav.Link>
         </Nav.Item>
       </Nav>
